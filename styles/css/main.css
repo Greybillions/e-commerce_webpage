@@ -144,9 +144,17 @@ a {
   left: 21px;
 }
 
+#mobile {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
 /* Homepage Hero */
 #hero {
-  background: url(/img/hero4.png) no-repeat top 25% center/cover;
+  background: url(/img/hero4.png) no-repeat center center/cover;
   height: 90vh;
   width: 100%;
   padding: 0 80px;
@@ -526,4 +534,179 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+/* Media Queries */
+/* For Tablets and iPads */
+@media (max-width: 999px) {
+  .section-p1 {
+    padding: 40px;
+  }
+
+  /* Header and Navbar */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: all 0.3s ease;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #navbar.show {
+    right: 0;
+  }
+
+  #mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    color: var(--other-color);
+  }
+
+  #close {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 25px;
+  }
+
+  #shop {
+    display: none;
+  }
+
+  /* Hero */
+  #hero {
+    background-position: top 30% right 30%;
+    height: 70vh;
+  }
+
+  /* feature */
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 18px;
+  }
+
+  /* Product */
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
+  }
+
+  /* Banner */
+  #sm-banner .banner-box {
+    height: 30vh;
+    min-width: 100%;
+  }
+
+  #banner3 {
+    padding: 0 100px;
+  }
+
+  #banner3 .banner-box {
+    height: 20vh;
+    min-width: 100%;
+  }
+
+  /* Newsletter */
+  #newsletter .form {
+    width: 70%;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 500px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+
+  #navbar {
+    width: 150px;
+  }
+
+  #hero {
+    background-position: 55%;
+    padding: 0 22px;
+  }
+
+  #hero h2 {
+    font-size: 32px;
+  }
+
+  #hero h1 {
+    font-size: 38px;
+  }
+
+  #feature {
+    justify-content: space-around;
+  }
+
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+    padding: 10px 5px;
+  }
+
+  #product1 h2 {
+    font-size: 36px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #banner h2 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  #banner .btn-light {
+    background: var(--white-color);
+    color: var(--dark-color);
+    padding: 15px 25px;
+    font-weight: 600;
+  }
+
+  #banner3 {
+    padding: 0 30px;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  #newsletter .form {
+    width: 100%;
+  }
 }
