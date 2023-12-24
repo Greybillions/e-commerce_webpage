@@ -17,7 +17,7 @@ Welcome to **My E-commerce Shopping Website**! Consists of advance CSS concepts 
 
 ## Usage
 
-Kindly visit to view.
+Kindly https://www.shopwithabby.vercel.app visit to view.
 
 ## Contributing
 
