@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles/css/utilities.css" />
   </head>
   <body>
-    <!-- Header & Nav -->
+    <!-- Header & Nav Section -->
     <section id="header">
-      <a class="logo" href="index.html"><span></span><i>Abby🌺</i></span></a>
+      <a class="logo" href="index.html"><i>Abby🌺</i></a>
 
       <div>
         <ul id="navbar">
@@ -20,13 +20,191 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
+          <li id="shop">
             <a href="cart.html" class="active"
               ><i class="fas fa-shopping-cart"></i
             ></a>
           </li>
+          <i id="close" class="fas fa-times"></i>
         </ul>
       </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+        <!-- <button class="btn">Sign Up<i class="fas fa-user"></i></button> -->
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
     </section>
+
+    <!-- Hero Section -->
+    <section id="shop-hero" class="about-hero">
+      <h2>#cart</h2>
+      <p>Add your coupon code & save up to 70%!</p>
+    </section>
+
+    <!-- Cart Items Section -->
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Pirce</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/f1.jpg" alt="" /></td>
+            <td>Gucci T-shirt</td>
+            <td>$9.99</td>
+            <td><input type="number" value="1" /></td>
+            <td>$9.99</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/n6.jpg" alt="" /></td>
+            <td>Gucci Shorts</td>
+            <td>$9.99</td>
+            <td><input type="number" value="1" /></td>
+            <td>$9.99</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/f2.jpg" alt="" /></td>
+            <td>Gucci T-shirt</td>
+            <td>$9.99</td>
+            <td><input type="number" value="1" /></td>
+            <td>$9.99</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/products/f3.jpg" alt="" /></td>
+            <td>Gucci T-shirt</td>
+            <td>$9.99</td>
+            <td><input type="number" value="1" /></td>
+            <td>$9.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Cart Total & Coupon Section -->
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter Coupon Code" />
+          <button class="btn btn-main">Apply</button>
+        </div>
+      </div>
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$39.96</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>$1.99</td>
+          </tr>
+          <tr>
+            <td>VAT</td>
+            <td>$2.99</td>
+          </tr>
+          <tr>
+            <td>20% Discount</td>
+            <td>-$8.99</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$35.95</strong></td>
+          </tr>
+        </table>
+        <button class="btn btn-main">Proceed to checkout</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-p1">
+      <div>
+        <div class="col">
+          <a class="logo" href="index.html"><i>Abby🌺</i></a>
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> Lekki Gardens Estate, Lagos, Nigeria</p>
+          <p><strong>Phone:</strong> +234 7052 000 000, +234 8012 000 000</p>
+          <p><strong>Hours:</strong> 8:00 - 18:00, Mon - Sat WAT</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://threads.com" target="_blank"
+                ><i class="fab fa-threads"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://youtube.com" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="https://pinterest.com" target="_blank"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <h4>About</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track An Order</a>
+          <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From Apple Store or Google Play Store</p>
+          <div class="row">
+            <img src="/img/pay/app.jpg" alt="" />
+            <img src="/img/pay/play.jpg" alt="" />
+          </div>
+          <p>Secure Payment Gateways</p>
+          <img src="/img/pay/pay.png" alt="" />
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Abby &copy; 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>

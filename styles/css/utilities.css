@@ -63,6 +63,13 @@
   font-weight: 600;
 }
 
+.btn-main {
+  background: var(--active-color);
+  color: var(--white-color);
+  padding: 15px 25px;
+  font-weight: 600;
+}
+
 .btn-plain {
   background: none;
   color: var(--white-color);
