@@ -973,7 +973,7 @@ footer a:hover {
   padding: 20px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   color: var(--light-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
 }
@@ -1367,5 +1367,12 @@ footer a:hover {
 
   #subtotal {
     width: 100%;
+  }
+
+  /* Login page */
+  #login .wrapper {
+    background: transparent;
+    height: 370px;
+    width: 340px;
   }
 }
