@@ -21,7 +21,7 @@
 }
 
 .btn-primary {
-  background: url('/img/button.png') transparent no-repeat center center/cover;
+  background: url('/img/button.webp') transparent no-repeat center center/cover;
   color: var(--active-color);
   padding: 14px 80px 14px 65px;
   font-weight: 700;
